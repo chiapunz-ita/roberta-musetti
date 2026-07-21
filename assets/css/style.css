@@ -16,12 +16,12 @@
   --ink:#241019;
   --ink-soft:#6b4f60;
   --ink-faint:#a58a9b;
-  --coral:#e0227e;
-  --coral-deep:#a6115c;
-  --coral-light:#ff8fc4;
-  --gold:#f0a8cb;
-  --lilac:#c13e93;
-  --lilac-soft:#f3c6e1;
+  --coral:#b81664;
+  --coral-deep:#7d0e46;
+  --coral-light:#e28fb0;
+  --gold:#cdb7ad;
+  --lilac:#6b3350;
+  --lilac-soft:#e8d9de;
   --line-dark: rgba(255,255,255,.14);
   --line-light: rgba(36,16,25,.12);
 
@@ -88,8 +88,8 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
   border:1px solid transparent; transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease), color .35s var(--ease), border-color .35s var(--ease);
   white-space:nowrap;
 }
-.btn-primary{ background:linear-gradient(135deg,var(--coral-light),var(--coral)); color:#1c0f0a; box-shadow:0 14px 30px -12px rgba(224,34,126,.55); }
-.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 18px 34px -10px rgba(224,34,126,.65); }
+.btn-primary{ background:linear-gradient(135deg,var(--coral-light),var(--coral)); color:#1c0f0a; box-shadow:0 14px 30px -12px rgba(184,22,100,.55); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 18px 34px -10px rgba(184,22,100,.65); }
 .btn-ghost{ background:transparent; border-color:var(--line-light); color:var(--ink); }
 .btn-ghost:hover{ border-color:var(--ink); }
 .on-dark .btn-ghost, .hero .btn-ghost, .section-dark .btn-ghost, .page-hero .btn-ghost{ border-color:var(--line-dark); color:#fbeef4; }
@@ -173,8 +173,8 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .hero-glow{
   position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; opacity:.55; mix-blend-mode:screen;
 }
-.hero-glow.g1{ width:520px; height:520px; background:var(--coral); top:-160px; right:-120px; }
-.hero-glow.g2{ width:420px; height:420px; background:var(--lilac); bottom:-140px; left:-100px; opacity:.4; }
+.hero-glow.g1{ width:520px; height:520px; background:var(--coral); top:-160px; right:-120px; opacity:.30; }
+.hero-glow.g2{ width:420px; height:420px; background:var(--lilac); bottom:-140px; left:-100px; opacity:.5; }
 
 .hero-inner{ position:relative; z-index:2; max-width:900px; }
 .hero-kicker{
@@ -233,7 +233,7 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
   background:radial-gradient(130% 100% at 85% 0%, var(--deep-3), var(--deep-1) 60%);
 }
 .page-hero .blob{ position:absolute; filter:blur(60px); opacity:.5; mix-blend-mode:screen; border-radius:50%; }
-.page-hero .blob.b1{ width:380px; height:380px; background:var(--coral); top:-120px; left:-60px; }
+.page-hero .blob.b1{ width:380px; height:380px; background:var(--coral); top:-120px; left:-60px; opacity:.35; }
 .page-hero .blob.b2{ width:300px; height:300px; background:var(--lilac); bottom:-140px; right:10%; opacity:.35; }
 .page-hero-inner{ position:relative; z-index:2; max-width:760px; }
 .page-hero h1{ font-size:clamp(2.1rem, 4.6vw, 3.4rem); }
@@ -261,7 +261,7 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .manifesto-visual .ring.r1{ inset:0; }
 .manifesto-visual .ring.r2{ inset:12%; border-style:dashed; opacity:.6; }
 .manifesto-visual .ring.r3{ inset:24%; background:linear-gradient(135deg, var(--paper-dim), var(--paper-soft)); border:none; }
-.manifesto-visual .spark{ position:absolute; width:10px; height:10px; border-radius:50%; background:var(--coral); box-shadow:0 0 0 6px rgba(224,34,126,.15); }
+.manifesto-visual .spark{ position:absolute; width:10px; height:10px; border-radius:50%; background:var(--coral); box-shadow:0 0 0 6px rgba(184,22,100,.15); }
 .manifesto-visual .mark-center{ position:absolute; inset:32%; color:var(--coral-deep); }
 .manifesto-visual .mark-center svg{ width:100%; height:100%; }
 
@@ -305,7 +305,7 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .service-card .card-link svg{ width:14px; height:14px; transition:transform .3s var(--ease); }
 .service-card:hover .card-link svg{ transform:translateX(4px); }
 .service-card.n2 .icon{ background:linear-gradient(135deg,var(--lilac-soft),var(--lilac)); }
-.service-card.n3 .icon{ background:linear-gradient(135deg,var(--gold),var(--coral-deep)); }
+.service-card.n3 .icon{ background:linear-gradient(135deg,var(--deep-3),var(--ink)); }
 
 /* =========================================================
    DARK SECTION (crisis / cta banners)
@@ -334,7 +334,7 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 }
 .about-photo .frame img{ width:100%; height:100%; object-fit:cover; filter:saturate(1.05) contrast(1.03); }
 .about-photo .frame::after{
-  content:""; position:absolute; inset:0; background:linear-gradient(200deg, rgba(224,34,126,.16), rgba(58,7,41,.22));
+  content:""; position:absolute; inset:0; background:linear-gradient(200deg, rgba(184,22,100,.16), rgba(58,7,41,.22));
   mix-blend-mode:multiply; opacity:.5;
 }
 .about-photo .ring-deco{ position:absolute; inset:-18px; border:1px dashed var(--line-light); border-radius:38% 62% 60% 40% / 46% 40% 60% 54%; z-index:-1; }

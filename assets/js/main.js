@@ -146,7 +146,7 @@
           var dx=p1.x-p2.x, dy=p1.y-p2.y;
           var dist=Math.sqrt(dx*dx+dy*dy);
           if(dist < maxDist){
-            ctx.strokeStyle = "rgba(255,143,196," + (0.18*(1-dist/maxDist)) + ")";
+            ctx.strokeStyle = "rgba(226,143,176," + (0.14*(1-dist/maxDist)) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(p1.x,p1.y); ctx.lineTo(p2.x,p2.y); ctx.stroke();
           }
