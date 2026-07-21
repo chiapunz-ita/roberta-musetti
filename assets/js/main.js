@@ -146,7 +146,7 @@
           var dx=p1.x-p2.x, dy=p1.y-p2.y;
           var dist=Math.sqrt(dx*dx+dy*dy);
           if(dist < maxDist){
-            ctx.strokeStyle = "rgba(255,178,122," + (0.16*(1-dist/maxDist)) + ")";
+            ctx.strokeStyle = "rgba(255,143,196," + (0.18*(1-dist/maxDist)) + ")";
             ctx.lineWidth = 1;
             ctx.beginPath(); ctx.moveTo(p1.x,p1.y); ctx.lineTo(p2.x,p2.y); ctx.stroke();
           }
@@ -154,7 +154,7 @@
       }
       points.forEach(function(p){
         ctx.beginPath();
-        ctx.fillStyle = "rgba(250,230,210,.85)";
+        ctx.fillStyle = "rgba(255,251,244,.9)";
         ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
         ctx.fill();
       });
