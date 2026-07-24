@@ -184,6 +184,13 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .hero-kicker .dot{ width:6px; height:6px; border-radius:50%; background:var(--coral-light); }
 
 .typewriter-wrap{ min-height:calc(4 * 1.2em); margin-bottom:8px; }
+.typewriter-lead{
+  font-family:var(--font-display); font-style:normal; font-weight:700;
+  font-size:clamp(1.7rem, 4.4vw, 3.2rem); line-height:1.28; letter-spacing:-.01em;
+  color:#fdf3f8; margin:0 0 4px;
+  opacity:0; transform:translateY(8px);
+  animation:fade-up .8s var(--ease) forwards; animation-delay:.15s;
+}
 .typewriter{
   font-family:var(--font-display); font-style:italic; font-weight:500;
   font-size:clamp(1.7rem, 4.4vw, 3.2rem); line-height:1.28; letter-spacing:-.01em;
