@@ -234,6 +234,12 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .scroll-cue .line{ width:1px; height:34px; background:linear-gradient(#eab8d9, transparent); animation:cue-move 2.2s ease-in-out infinite; }
 @keyframes cue-move{ 0%{ transform:scaleY(.4); transform-origin:top; } 50%{ transform:scaleY(1); transform-origin:top; } 100%{ transform:scaleY(.4); transform-origin:top; } }
 
+/* ---------- landing / schermata d'apertura ---------- */
+.landing-hero{ padding-top:80px; padding-bottom:80px; }
+.landing-hero .landing-inner{ margin:0 auto; max-width:760px; text-align:center; }
+.landing-hero .typewriter-wrap{ min-height:calc(3 * 1.2em); }
+.landing-hero .landing-actions{ justify-content:center; margin-top:52px; }
+
 /* page hero (sottopagine) */
 .page-hero{
   position:relative; padding:190px 0 100px; color:#fbeef4; overflow:hidden;
