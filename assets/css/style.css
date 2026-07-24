@@ -272,16 +272,18 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
    ========================================================= */
 .manifesto{ background:var(--paper); }
 .manifesto-grid{ display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
-.manifesto-visual{ position:relative; aspect-ratio:1/1; }
-.manifesto-visual .ring{
-  position:absolute; border-radius:50%; border:1px solid var(--line-light);
+.manifesto-visual{ position:relative; display:flex; align-items:center; justify-content:center; padding:20px; }
+.manifesto-visual .mark-center{ position:relative; width:100%; max-width:380px; filter:drop-shadow(0 18px 40px rgba(84,16,60,.16)); }
+.manifesto-visual .mark-center::before{
+  content:""; position:absolute; inset:-14%; z-index:-1;
+  background:radial-gradient(60% 60% at 50% 50%, var(--paper-soft), rgba(251,240,228,0) 72%);
 }
-.manifesto-visual .ring.r1{ inset:0; }
-.manifesto-visual .ring.r2{ inset:12%; border-style:dashed; opacity:.6; }
-.manifesto-visual .ring.r3{ inset:24%; background:linear-gradient(135deg, var(--paper-dim), var(--paper-soft)); border:none; }
-.manifesto-visual .spark{ position:absolute; width:10px; height:10px; border-radius:50%; background:var(--coral); box-shadow:0 0 0 6px rgba(184,22,100,.15); }
-.manifesto-visual .mark-center{ position:absolute; inset:22%; color:var(--coral-deep); }
-.manifesto-visual .mark-center svg, .manifesto-visual .mark-center img{ width:100%; height:100%; object-fit:contain; }
+.manifesto-visual .mark-center svg{ width:100%; height:100%; }
+.manifesto-visual .mark-center img{
+  display:block; width:100%; height:auto;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 50%, #000 72%, rgba(0,0,0,0) 100%);
+  mask-image:radial-gradient(ellipse at 50% 50%, #000 72%, rgba(0,0,0,0) 100%);
+}
 
 .manifesto-copy h2{ font-size:clamp(1.9rem, 3vw, 2.6rem); }
 .manifesto-copy p{ color:var(--ink-soft); font-size:1.05rem; }
