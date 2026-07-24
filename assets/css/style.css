@@ -117,8 +117,13 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
   box-shadow:0 10px 30px -18px rgba(0,0,0,.5);
 }
 .brand{ display:flex; align-items:center; gap:12px; color:#fbeef4; }
-.brand-mark{ width:38px; height:38px; color:var(--coral-light); flex-shrink:0; }
+.brand-mark{
+  width:40px; height:40px; color:var(--coral-light); flex-shrink:0;
+  background:var(--paper); border-radius:50%; padding:5px; box-shadow:0 3px 10px -2px rgba(0,0,0,.35);
+  overflow:hidden;
+}
 .brand-mark svg{ width:100%; height:100%; }
+.brand-mark img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.15; white-space:nowrap; }
 .brand-name{ font-family:var(--font-display); font-size:1.05rem; font-weight:600; letter-spacing:.01em; white-space:nowrap; }
 .brand-tag{ font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; opacity:.68; white-space:nowrap; }
@@ -275,8 +280,8 @@ input,textarea,select{ font-family:inherit; font-size:1rem; }
 .manifesto-visual .ring.r2{ inset:12%; border-style:dashed; opacity:.6; }
 .manifesto-visual .ring.r3{ inset:24%; background:linear-gradient(135deg, var(--paper-dim), var(--paper-soft)); border:none; }
 .manifesto-visual .spark{ position:absolute; width:10px; height:10px; border-radius:50%; background:var(--coral); box-shadow:0 0 0 6px rgba(184,22,100,.15); }
-.manifesto-visual .mark-center{ position:absolute; inset:32%; color:var(--coral-deep); }
-.manifesto-visual .mark-center svg{ width:100%; height:100%; }
+.manifesto-visual .mark-center{ position:absolute; inset:22%; color:var(--coral-deep); }
+.manifesto-visual .mark-center svg, .manifesto-visual .mark-center img{ width:100%; height:100%; object-fit:contain; }
 
 .manifesto-copy h2{ font-size:clamp(1.9rem, 3vw, 2.6rem); }
 .manifesto-copy p{ color:var(--ink-soft); font-size:1.05rem; }
